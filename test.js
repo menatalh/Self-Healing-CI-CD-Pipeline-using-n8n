@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 })
 
 const server = app.listen(5000, () => {
-    console.log('Server started, running test...')
+    console.log('Server started, running test..')
 
     http.get('http://localhost:5000/', (res) => {
         console.log(`Status: ${ res.statusCode }`);
